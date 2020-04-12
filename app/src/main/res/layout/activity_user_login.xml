@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0FFF0"
+    tools:context=".UserLogin">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:id="@+id/login_email"
+         android:hint="Email " android:layout_marginTop="190dp"
+        android:layout_marginStart="17dp" android:layout_marginEnd="17dp"
+        android:layout_marginBottom="25dp"/>
+
+    <EditText
+        android:stateListAnimator="@drawable/button_shape"
+        android:drawableLeft="@drawable/ic_https_black_24dp"
+        android:drawablePadding="5dp"
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_email"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:ems="10"
+        android:hint="Password "
+        android:inputType="textPassword" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+
+        android:layout_below="@id/login_password" android:id="@+id/forget_password_link"
+        android:layout_marginTop="10dp" android:layout_marginStart="19dp"
+        android:layout_marginEnd="19dp" android:text="Forgot Password?" android:textAlignment="textEnd"
+        android:textSize="18sp" />
+    <Button
+        android:text="Login"
+        android:stateListAnimator="@drawable/button"
+        android:background="@drawable/button_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/login_btn"
+        android:textAllCaps="false"
+        android:layout_below="@id/forget_password_link" android:layout_marginTop="20dp"
+        android:layout_marginLeft="19dp" android:layout_marginRight="19dp" android:textSize="24sp"
+        />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+
+        android:layout_below="@id/login_btn" android:id="@+id/need_new_account_link"
+        android:layout_marginTop="17dp" android:layout_marginStart="19dp"
+        android:layout_marginEnd="19dp" android:text="create Account" android:textAlignment="center"
+        android:textSize="18sp" android:textStyle="bold"/>
+
+</RelativeLayout>
