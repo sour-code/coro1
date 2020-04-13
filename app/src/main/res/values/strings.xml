@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">coro1</string>
+    <string name="app_name" translatable="false">coro1</string>
     <string name="title_activity_user_register">Sign in</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
