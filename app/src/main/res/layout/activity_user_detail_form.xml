@@ -34,31 +34,47 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
 
-                <EditText
-                    android:id="@+id/firstname"
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:ems="10"
-                    android:hint="FIRST NAME"
-                    android:inputType="textPersonName"
-                    android:textSize="16sp" />
+                  >
 
-                <EditText
-                    android:id="@+id/lastname"
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:hint="First name"
+                        android:id="@+id/firstname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:textSize="16sp"
+
+                        />
+
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:ems="10"
-                    android:hint="LAST DATE"
-                    android:inputType="textPersonName"
-                    android:textSize="16sp" />
-            </LinearLayout>
+                    android:layout_marginRight="15dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/lastname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:ems="10"
+                        android:hint="Last name"
+                        android:inputType="textPersonName"
+                        android:textSize="16sp"/>
+
+
+
+                </com.google.android.material.textfield.TextInputLayout>
 
             <EditText
                 android:id="@+id/adhaar"
